@@ -133,71 +133,28 @@ body {
     height: 12px;
 }
 
-/* Estilo para o contêiner do carrossel e do texto */
-#carrossel-escritorio {
+.texto-escritorio {
+    display: flex; /* Define um layout flexível */
+    flex-direction: row; /* Coloca a imagem e o texto lado a lado */
+    align-items: flex-start; /* Alinha os itens no topo verticalmente */
+    gap: 20px; /* Espaçamento entre a imagem e o texto */
+    text-align: justify; /* Justifica o texto */
+}
+
+.texto-escritorio img {
+    max-width: 40%; /* Define a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.texto-escritorio .texto {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 0 10%;
+    flex-direction: column; /* Empilha o texto em cima do outro */
+    gap: 10px; /* Espaçamento entre o título e o parágrafo */
 }
 
-/* Estilo para o texto */
-#carrossel-escritorio .texto-escritorio {
-    flex: 1;
-    margin-right: 30px;
-}
 
-/* Estilo para o título h2 */
-#carrossel-escritorio h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-}
 
-/* Estilo para o parágrafo p */
-#carrossel-escritorio p {
-    font-size: 1.2rem;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 30px;
-}
 
-/* Estilo para o carrossel */
-#novoCarrossel {
-    flex: 2;
-    max-width: 100%;
-}
-
-/* Ajuste da largura e altura das imagens dentro do carrossel */
-#novoCarrossel .custom-size {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Ajustes nos controles do carrossel */
-#novoCarrossel .carousel-control-prev-icon,
-#novoCarrossel .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    padding: 10px;
-}
-
-#novoCarrossel .carousel-control-prev,
-#novoCarrossel .carousel-control-next {
-    width: 5%;
-}
-
-/* Indicadores do carrossel */
-#novoCarrossel .carousel-indicators li {
-    background-color: #333;
-    border-radius: 50%;
-    width: 12px;
-    height: 12px;
-}
 
 /* Rodapé */
 footer {

@@ -1,205 +1,238 @@
 /* Reset básico */
-body, h1, h2, h3, p {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo geral */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
-    margin: 0; /* Remove a margem do corpo */
-    padding: 0; /* Remove o padding do corpo */
 }
 
 /* Navbar */
 .navbar {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 0; /* Remove qualquer margem inferior da navbar */
-    padding-top: 0; /* Remove qualquer padding superior */
+    padding: 10px 20px;
 }
 
-/* Logo */
 .logo-img {
-    width: 40%;
-    height: auto; /* Mantém a proporção */
-    position: relative;
-    left: -14%; /* Ajuste o valor conforme necessário */
+    width: 45%;
+    height: auto;
+    margin-right: 0px;
+    margin-left: -25%;
 }
 
-/* Alinha o item 'contato' à direita */
-.contato {
-    margin-left: auto;  /* Garante que o item 'contato' seja alinhado à direita */
-}
 
-/* Estilo da imagem dentro do item de navegação */
-.contato-img {
-    width: 20%;  /* Ajuste o tamanho da imagem */
-    height: auto;  /* Mantém a proporção da imagem */
-    position: absolute;  /* Faz com que a imagem se posicione de forma absoluta dentro do seu contêiner */
-    right: 50px;  /* Ajusta a posição para a esquerda, 50px de distância do canto direito */
-    margin-top: 100%,
+/* Estilo para o texto do logo */
+.logo-text {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    color: #333; /* Cor do texto */
+    margin-left: 10px; /* Margem à esquerda para dar espaço à imagem */
+    font-family: 'Arial', sans-serif; /* Fonte do texto */
+    color: 0;
 }
 
 
 
-/* Banner inicial */
-.container-fluid {
-    background: linear-gradient(135deg, #053388, #053388) !important;
-    color: white !important;
-    padding: 20px 0 !important; /* Reduzido de 50px para 20px */
-    margin-top: 0 !important; /* Remove qualquer margem superior adicional */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-/* Links da Navbar */
 .navbar-nav .nav-link {
     color: #555 !important;
-    margin: 0 10px;
+    transition: color 0.3s ease-in-out;
 }
 
 .navbar-nav .nav-link:hover {
     color: #007bff !important;
 }
 
-
-
-
-.container-fluid h1 {
-    color: #ffd000; /* Exemplo de cor laranja */
-    font-size: 3rem; /* Tamanho ajustado */
-    font-weight: 700; /* Peso da fonte mais intenso */
+.contato {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
 }
 
+.contato-img {
+    width: 65px;
+    height: auto;
+}
 
+/* Alterando a cor do texto para amarelo */
+.contato h2 {
+    font-size: 1rem;
+    margin: 0;
+    color: #000000; /* Cor Preta */
+}
+
+/* Banner inicial */
+.container-fluid {
+    background: linear-gradient(135deg, #053388, #053388);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
 
 .container-fluid h1 {
+    color: #ffd000;
     font-size: 2.5rem;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .container-fluid p {
     font-size: 1.2rem;
-    margin-top: 10px;
+    margin: 0;
 }
 
 /* Seção Sobre */
 #sobre {
     background: #f8f9fa;
-    padding: 50px 0;
+    padding: 50px 20px;
+    text-align: center;
 }
 
 #sobre h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #053388;
+    margin-bottom: 10px;
 }
 
 #sobre p {
     font-size: 1rem;
-    margin-top: 15px;
     color: #555;
+    text-align: justify;
 }
 
-/* Alinhando o container de serviços e carrossel */
+/* Seção Serviços */
 #servicos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 100px;
-    padding: 50px 0;
+    background-color: #f8f9fa; /* Cor clara para o fundo */
+    padding: 3rem 1rem; /* Espaçamento superior e inferior */
 }
 
-/* Estilo para o título h4 dentro de .col-md-4 */
-#servicos .col-md-4 h2 {
-    text-align: right;
-    font-size: 3rem;
-    color: #333;
-    line-height: 1.6;
-    flex: 1;
-}
-
-/* Estilo para o parágrafo p dentro de .col-md-4 */
-#servicos .col-md-4 p {
-    margin-top: 10px;
-    text-align: right;
+#servicos h2 {
     font-size: 2rem;
-    color: #333;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-top: -35%;
+}
+
+#servicos p {
+    font-size: 1.1rem;
     line-height: 1.6;
-    flex: 1;
+    color: #555;
+    margin-top: -0%; /* Ajusta o texto para subir um pouco */
 }
 
-/* Estilo exclusivo para o primeiro carrossel */
-#miniCarrossel {
-    width: 700px;
-    margin-left: 10px;
-    margin-right: 0;
+/* Ajuste para a imagem */
+.img-ajustada {
+    max-width: 80%; /* Reduz o tamanho da imagem */
+    margin: 0 auto; /* Centraliza a imagem no espaço disponível */
+    display: block; /* Garante alinhamento */
 }
 
-#miniCarrossel .carousel-inner {
-    width: 100%;
-    height: auto;
-}
-
-#miniCarrossel .custom-size {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#miniCarrossel .carousel-control-prev-icon,
-#miniCarrossel .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    padding: 10px;
-}
-
-#miniCarrossel .carousel-control-prev,
-#miniCarrossel .carousel-control-next {
-    width: 30px;
-}
-
-#miniCarrossel .carousel-indicators li {
-    background-color: #333;
-    border-radius: 50%;
-    width: 12px;
-    height: 12px;
-}
-
-.texto-escritorio {
-    display: flex; /* Define um layout flexível */
-    flex-direction: row; /* Coloca a imagem e o texto lado a lado */
-    align-items: flex-start; /* Alinha os itens no topo verticalmente */
-    gap: 20px; /* Espaçamento entre a imagem e o texto */
-    text-align: justify; /* Justifica o texto */
-}
-
-.texto-escritorio img {
-    max-width: 40%; /* Define a largura máxima da imagem */
-    height: auto; /* Mantém a proporção da imagem */
-}
-
-.texto-escritorio .texto {
+/* Layout para Texto e Imagem */
+#servicos .row {
     display: flex;
-    flex-direction: column; /* Empilha o texto em cima do outro */
-    gap: 10px; /* Espaçamento entre o título e o parágrafo */
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    /* Para dispositivos menores */
+    #servicos .row {
+        flex-direction: column; /* Empilha o texto e a imagem */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    #servicos img {
+        margin-top: 20px; /* Adiciona espaçamento acima da imagem */
+    }
+
+    /* Ajusta a posição do texto em telas pequenas */
+    #servicos .col-md-6:first-child {
+        margin-top: -10px; /* Ajuste adicional para a versão móvel */
+    }
+}
+
+
+
+/* Seção Escritório */
+#escritorio {
+    background-color: #f8f9fa; /* Cor clara para o fundo */
+    padding: 3rem 1rem; /* Espaçamento superior e inferior */
+}
+
+/* Título e Descrição */
+#escritorio h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-top: -25%; /* Ajuste para o título ficar um pouco mais para cima */
+}
+
+#escritorio p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-top: -0%; /* Ajusta o texto para subir um pouco */
+}
+
+/* Ajuste para a imagem */
+#escritorio .img-ajustada {
+    max-width: 80%; /* Reduz o tamanho da imagem */
+    margin: 0 auto; /* Centraliza a imagem no espaço disponível */
+    display: block; /* Garante alinhamento */
+}
+
+/* Layout para Texto e Imagem */
+#escritorio .texto-escritorio {
+    display: flex;
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: flex-start; /* Ajusta o alinhamento para começar do lado esquerdo */
+    gap: 10px; /* Reduz o espaço entre a imagem e o texto */
+}
+
+/* Ajusta a largura da imagem */
+#escritorio .texto-escritorio img {
+    max-width: 40%; /* Limita a imagem a 40% da largura */
+    height: auto; /* Mantém a proporção */
+    border-radius: 10px; /* Borda arredondada */
+}
+
+/* Ajuste da largura do texto */
+#escritorio .texto-escritorio .texto {
+    max-width: 50%; /* Limita a largura do texto */
+}
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 768px) {
+    /* Empilha o texto e a imagem em dispositivos móveis */
+    #escritorio .texto-escritorio {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Ajusta a margem superior da imagem para dispositivos móveis */
+    #escritorio .texto-escritorio img {
+        margin-top: 20px;
+    }
+
+    /* Ajusta a margem do texto em telas pequenas */
+    #escritorio .texto-escritorio .texto {
+        margin-top: -10px;
+    }
 }
 
 
 
 
 
-/* Rodapé */
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-footer p {
-    margin: 0;
-    font-size: 0.9rem;
+.footer-custom {
+    background: linear-gradient(135deg, #053388, #053388);
 }
